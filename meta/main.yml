@@ -1,0 +1,19 @@
+---
+galaxy_info:
+  author: Phil Cryer
+  description: Some simple smoketests that can be run by Ansible to verify a site is loading.
+  company: fak3r.com 
+  license: BSD
+  min_ansible_version: 1.2
+  platforms:
+  - name: EL
+    versions:
+    - 6
+    - 7
+  - name: Ubuntu
+    versions:
+    - all
+  - name: Debian
+    versions:
+    - all
+dependencies: []

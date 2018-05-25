@@ -1,0 +1,6 @@
+---
+- name:  "notify smoketests to run"
+  debug:
+    msg: "triggering smoketests"
+  notify: "smoketests"
+  changed_when: true

@@ -1,0 +1,6 @@
+---
+smoke_host: "{{ ansible_fqdn }}"
+smoke_path: "/"
+smoke_status: "200"
+smoke_content: "Copyright"
+smoke_protocol: "https"
