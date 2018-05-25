@@ -31,6 +31,7 @@ If you don't define any variables, this playbook will use the defaults found in 
 ```
 smoketests_host: "{{ ansible_fqdn }}"
 smoketests_path: "/"
+smoketests_port: "443"
 smoketests_status: "200"
 smoketests_content: "Copyright"
 smoketests_protocol: "https"
@@ -42,7 +43,7 @@ If you want to override a default variable, pass it as a parameter to the role:
 
 ```
 roles:
-   - { role: smoketests, smoke_path: /solr }
+   - { role: smoketests, smoke_path: "/solr" }
 ```
 
 ## License

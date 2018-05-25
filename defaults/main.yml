@@ -1,6 +1,7 @@
 ---
-smoke_host: "{{ ansible_fqdn }}"
-smoke_path: "/"
-smoke_status: "200"
-smoke_content: "Copyright"
-smoke_protocol: "https"
+smoketests_host: "{{ ansible_fqdn }}"
+smoketests_path: "/"
+smoketests_port: "443"
+smoketests_status: "200"
+smoketests_content: "Copyright"
+smoketests_protocol: "https"

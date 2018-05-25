@@ -16,4 +16,8 @@ galaxy_info:
   - name: Debian
     versions:
     - all
+  categories:
+  - smoketests
+  - webservices
+  - testing
 dependencies: []

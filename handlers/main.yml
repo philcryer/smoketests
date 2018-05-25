@@ -3,7 +3,7 @@
   environment:
     no_proxy: "{{ inventory_hostname }}"
   uri:
-    url: "{{ smoketests_protocol }}://{{ smoketests_host }}/{{ smoketests_path }}"
+    url: "{{ smoketests_protocol }}://{{ smoketests_host }}:{{ smoketests_port }}{{ smoketests_path }}"
     method: GET
     return_content: yes
     follow_redirects: all
