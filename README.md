@@ -1,3 +1,5 @@
+<div align="right"><img alt="Smoke testing in progress" src="smoke.png"></div>
+
 # smoketests
 
 Some simple smoketests that can be run by Ansible to verify a site is loading.
