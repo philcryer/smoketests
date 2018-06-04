@@ -1,5 +1,3 @@
-<div align="right"><img alt="Smoke testing in progress" src="smoke.png"></div>
-
 # smoketests
 
 Some simple smoketests that can be run by Ansible to verify a site is loading.
@@ -47,6 +45,9 @@ If you want to override a default variable, pass it as a parameter to the role:
 roles:
    - { role: smoketests, smoke_path: "/solr" }
 ```
+
+<div align="center"><img alt="Smoke testing in progress" src="smoke.png"></div>
+
 
 ## License
 
