@@ -1,0 +1,3 @@
+---
+- name: smoketests
+  src: https://github.com/philcryer/smoketests.git

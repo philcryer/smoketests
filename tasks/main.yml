@@ -1,6 +1,20 @@
 ---
-- name:  "notify smoketests to run"
-  debug:
-    msg: "triggering smoketests"
-  notify: "smoketests"
-  changed_when: true
+- name: "retrieve webpage content"
+  environment:
+    no_proxy: "{{ inventory_hostname }}"
+  uri:
+    url: "{{ smoketests_protocol }}://{{ smoketests_host }}:{{ smoketests_port }}{{ smoketests_path }}"
+    method: GET
+    return_content: yes
+    follow_redirects: all
+    status_code: "{{ smoketests_status }}"
+    body_format: raw
+    validate_certs: no
+  register: webpage
+  retries: 5
+  delay: 15
+
+- name: "verify webpage serves expected content"
+  assert:
+    that:
+      - "'{{ smoketests_content }}' in webpage.content"
